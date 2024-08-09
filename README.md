@@ -96,15 +96,6 @@ plt.figure(figsize=(12, 8))
 sns.set(font_scale=1.1)
 ax = sns.heatmap(pivot, annot=True, fmt='.2f', cmap='coolwarm', linewidths=.5, linecolor='black')
 ```
-### Rotate the x-axis labels for better readability
-```python
-plt.xticks(rotation=45, ha='right')
-plt.yticks(rotation=0)
-```
-### Set the title of the heatmap
-```python
-plt.title("Lift Metric for Frequent Itemsets", fontsize=16)
-```
 ### Display the heatmap
 ```python
 plt.tight_layout()
