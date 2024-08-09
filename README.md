@@ -17,20 +17,33 @@ This project analyzes real transaction data to identify frequent itemsets and ge
 - 🔗 Generate association rules to discover item relationships.
 - 📊 Visualize the association rules using heatmaps for better interpretation.
 
+## 📊 Dataset Summary
+
+- **Total Instances:** 541,909 transactions
+- **Total Unique Transactions:** 24,446
+- **Columns:**
+  - `StockCode`: Unique code for each item.
+  - `Description`: Description of the item.
+  - `Quantity`: Number of units of the item purchased.
+  - `InvoiceNo`: Invoice number (used to group transactions).
+  - `UnitPrice`: Price per unit of the item.
+  - `CustomerID`: Identifier for the customer making the purchase.
+  - `Country`: Country where the purchase was made.
+
+### Sample Data
+![moredata](https://github.com/user-attachments/assets/d5126c3e-f0d5-41a2-a2d0-b85513b5e1bb)
+
 ### Visualizing Association Rules
 
 ![heatmap](https://github.com/user-attachments/assets/415233d2-f4ac-4613-b2ad-b0fcad4b5ff5)
 Explanation: This heatmap visualizes the lift metric for the identified frequent itemsets, providing an intuitive way to understand the strength of associations between different items.
 
-📈 Conclusion
+### 📈 Conclusion
 This analysis of e-commerce transaction data reveals significant associations between various products, particularly color variants and related items. Businesses can utilize these insights to:
 
 - Optimize product placement and bundling.
 - Design targeted marketing campaigns.
 - Improve inventory management by anticipating demand for commonly paired items.
-
-![moredata](https://github.com/user-attachments/assets/d5126c3e-f0d5-41a2-a2d0-b85513b5e1bb)
-## Interpratation
 
 ## 🧩 Code Snippets
 
