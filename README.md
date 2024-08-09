@@ -16,7 +16,7 @@ This project analyzes real transaction data to identify frequent itemsets and ge
 - 🧩 Identify frequent itemsets using the Apriori algorithm.
 - 🔗 Generate association rules to discover item relationships.
 - 📊 Visualize the association rules using heatmaps for better interpretation.
-- 
+
 ## 📂 Dataset
 
 The dataset used for this analysis is included in the repository and can be accessed here:
