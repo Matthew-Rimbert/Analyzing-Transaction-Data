@@ -162,7 +162,3 @@ plt.show()
 ```
 ## 📈 Summary
 The project effectively demonstrates how to analyze transaction data to uncover patterns in customer purchasing behavior. By identifying frequent itemsets and generating association rules, businesses can gain insights into product relationships and use these insights to optimize inventory, promotions, and product placements.
-
-
-![moredata](https://github.com/user-attachments/assets/d5126c3e-f0d5-41a2-a2d0-b85513b5e1bb)
-
