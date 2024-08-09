@@ -86,7 +86,7 @@ rules_plot['antecedents'] = rules['antecedents'].apply(lambda x: ','.join(list(x
 rules_plot['consequents'] = rules['consequents'].apply(lambda x: ','.join(list(x)))
 rules_plot['lift'] = rules['lift'].apply(lambda x: round(x, 2))
 ```
-# Create a pivot table for the heatmap
+### Create a pivot table for the heatmap
 ```python
 pivot = rules_plot.pivot(index='antecedents', columns='consequents', values='lift')
 ```
