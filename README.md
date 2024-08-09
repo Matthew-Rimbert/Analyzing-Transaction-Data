@@ -33,6 +33,37 @@ This project analyzes real transaction data to identify frequent itemsets and ge
 ### Sample Data
 ![moredata](https://github.com/user-attachments/assets/d5126c3e-f0d5-41a2-a2d0-b85513b5e1bb)
 
+## 🧩 Frequent Itemsets
+
+Frequent itemsets are groups of items that are often purchased together. Identifying these itemsets helps businesses understand which products are popular in combination and can inform strategies such as bundling or cross-promotions.
+
+- **Total Frequent Itemsets Identified:** 136
+- **Example Itemsets and Support:**
+  - `(6 RIBBONS RUSTIC CHARM)` with a support of 0.039311 (3.93% of transactions)
+  - `(ALARM CLOCK BAKELIKE GREEN)` with a support of 0.040947 (4.09% of transactions)
+  - `(JUMBO BAG RED RETROSPOT, JUMBO SHOPPER VINTAGE RED PAISLEY)` with a support of 0.027939 (2.79% of transactions)
+
+## 🔗 Association Rules
+
+Association rules are generated to uncover relationships between different products in transactions. These rules indicate how the purchase of one item (antecedent) influences the purchase of another item (consequent).
+
+- **Total Association Rules Generated:** 13
+- **Metrics:**
+  - **Confidence:** The likelihood that the consequent is purchased when the antecedent is purchased.
+  - **Lift:** A measure of how much more likely the consequent is to be purchased compared to if it was unrelated to the antecedent.
+
+### Example Association Rules
+
+1. **Rule:** `(ALARM CLOCK BAKELIKE RED) → (ALARM CLOCK BAKELIKE GREEN)`
+   - **Confidence:** 59.76%
+   - **Lift:** 14.59
+   - **Interpretation:** Customers who buy the red version of the alarm clock are highly likely to also buy the green version.
+
+2. **Rule:** `(PINK REGENCY TEACUP AND SAUCER) → (GREEN REGENCY TEACUP AND SAUCER)`
+   - **Confidence:** 80.40%
+   - **Lift:** 18.59
+   - **Interpretation:** The purchase of one color variant of the Regency teacup and saucer significantly increases the likelihood of purchasing another color variant.
+
 ### Visualizing Association Rules
 
 ![heatmap](https://github.com/user-attachments/assets/415233d2-f4ac-4613-b2ad-b0fcad4b5ff5)
