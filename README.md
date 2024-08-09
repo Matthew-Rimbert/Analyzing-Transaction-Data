@@ -50,36 +50,36 @@ print('Number of transactions: ', len(trans))
 ```
 from mlxtend.preprocessing import TransactionEncoder
 
-# One-hot encode the transaction data
+### One-hot encode the transaction data
 ```python
 encoder = TransactionEncoder()
 encoded_array = encoder.fit(trans).transform(trans)
 ```
-# Convert the encoded array into a DataFrame
+### Convert the encoded array into a DataFrame
 ```python
 df_itemsets = pd.DataFrame(encoded_array, columns=encoder.columns_)
 from mlxtend.frequent_patterns import apriori
 ```
-# Identify frequent itemsets using the Apriori algorithm
+### Identify frequent itemsets using the Apriori algorithm
 ```python
 frequent_itemsets = apriori(df_itemsets, min_support=0.025, use_colnames=True)
 ```
-# Print the frequent itemsets
+### Print the frequent itemsets
 ```python
 print(frequent_itemsets)
 from mlxtend.frequent_patterns import apriori
 ```
-# Identify frequent itemsets using the Apriori algorithm
+### Identify frequent itemsets using the Apriori algorithm
 ```python
 frequent_itemsets = apriori(df_itemsets, min_support=0.025, use_colnames=True)
 ```
-# Print the frequent itemsets
+### Print the frequent itemsets
 ```python
 print(frequent_itemsets)
 import matplotlib.pyplot as plt
 import seaborn as sns
 ```
-# Prepare the rules for plotting
+### Prepare the rules for plotting
 ```python
 rules_plot = pd.DataFrame()
 rules_plot['antecedents'] = rules['antecedents'].apply(lambda x: ','.join(list(x)))
@@ -90,27 +90,27 @@ rules_plot['lift'] = rules['lift'].apply(lambda x: round(x, 2))
 ```python
 pivot = rules_plot.pivot(index='antecedents', columns='consequents', values='lift')
 ```
-# Create a heatmap using Seaborn
+### Create a heatmap using Seaborn
 ```python
 plt.figure(figsize=(12, 8))
 sns.set(font_scale=1.1)
 ax = sns.heatmap(pivot, annot=True, fmt='.2f', cmap='coolwarm', linewidths=.5, linecolor='black')
 ```
-# Rotate the x-axis labels for better readability
+### Rotate the x-axis labels for better readability
 ```python
 plt.xticks(rotation=45, ha='right')
 plt.yticks(rotation=0)
 ```
-# Set the title of the heatmap
+### Set the title of the heatmap
 ```python
 plt.title("Lift Metric for Frequent Itemsets", fontsize=16)
 ```
-# Display the heatmap
+### Display the heatmap
 ```python
 plt.tight_layout()
 plt.show()
 ```
-# 📈 Summary
+## 📈 Summary
 The project effectively demonstrates how to analyze transaction data to uncover patterns in customer purchasing behavior. By identifying frequent itemsets and generating association rules, businesses can gain insights into product relationships and use these insights to optimize inventory, promotions, and product placements.
 ![heatmap](https://github.com/user-attachments/assets/415233d2-f4ac-4613-b2ad-b0fcad4b5ff5)
 
