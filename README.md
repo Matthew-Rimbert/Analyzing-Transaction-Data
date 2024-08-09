@@ -1,9 +1,9 @@
 # 🛒 Analyzing Real Transaction Data 🛒
 
-##📋 Overview
+## 📋 Overview
 This project analyzes real transaction data to identify frequent itemsets and generate association rules using market basket analysis techniques. The results are visualized to help interpret the strength of these associations, providing actionable insights for optimizing product placement and promotions.
 
-##🎯 Objectives
+## 🎯 Objectives
 🛍️ Load and clean transaction data for analysis.
 🧩 Identify frequent itemsets using the Apriori algorithm.
 🔗 Generate association rules to discover item relationships.
