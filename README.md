@@ -22,7 +22,7 @@ This project analyzes real transaction data to identify frequent itemsets and ge
 The dataset used for this analysis is included in the repository and can be accessed here:
 [Online Retail.xlsx](https://github.com/user-attachments/files/16566967/Online.Retail.xlsx)
 
-- **File Name:** `ecommerce_transactions.xlsx`
+- **File Name:** `Online.Retail.xlsx`
 - **Format:** Excel
 - **Contents:** The dataset includes details of 541,909 transactions, such as stock codes, descriptions, quantities, unit prices, customer IDs, and the countries where the purchases were made.
 
