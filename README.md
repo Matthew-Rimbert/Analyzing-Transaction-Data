@@ -1,5 +1,5 @@
 # 🛒 Analyzing Real Transaction Data 🛒
-
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 
 ## 📋 Overview
 This project analyzes real transaction data to identify frequent itemsets and generate association rules using market basket analysis techniques. The results are visualized to help interpret the strength of these associations, providing actionable insights for optimizing product placement and promotions.
