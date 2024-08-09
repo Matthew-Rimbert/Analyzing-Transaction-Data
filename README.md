@@ -110,3 +110,8 @@ plt.title("Lift Metric for Frequent Itemsets", fontsize=16)
 plt.tight_layout()
 plt.show()
 ```
+
+![heatmap](https://github.com/user-attachments/assets/415233d2-f4ac-4613-b2ad-b0fcad4b5ff5)
+
+![moredata](https://github.com/user-attachments/assets/d5126c3e-f0d5-41a2-a2d0-b85513b5e1bb)
+
